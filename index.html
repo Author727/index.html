@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Group Professional Services | Pressure Washing Miami, FL</title>
+  <meta name="description" content="Welcome to Center Group Professional Services, providing reliable Pressure washing service in Miami, FL. We offer pressure washing, soft washing, painting, paver sealing, roof cleaning, window cleaning, and more.">
+  
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS RESET & GENERAL STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    :root {
+      --primary-color: #d4af37; /* Metallic Gold matching logo */
+      --secondary-color: #1a1a1a; /* Charcoal / Dark Theme */
+      --accent-color: #25d366; /* WhatsApp Green */
+      --text-dark: #222222;
+      --text-light: #666666;
+      --bg-light: #f8f9fa;
+      --white: #ffffff;
+      --transition: all 0.3s ease-in-out;
+    }
+
+    body {
+      color: var(--text-dark);
+      line-height: 1.6;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: var(--primary-color);
+      color: #000000;
+      font-weight: 700;
+      border-radius: 4px;
+      transition: var(--transition);
+      border: 2px solid var(--primary-color);
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      color: var(--primary-color);
+    }
+
+    /* STEP 1: HEADER SECTION */
+    header {
+      background-color: var(--secondary-color);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-container img {
+      height: 55px;
+      width: auto;
+      border-radius: 4px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      color: var(--primary-color);
+      display: block;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-link {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+    }
+
+    .hamburger {
+      display: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* STEP 2: BODY SECTION */
+
+    /* 1st Section: Hero Banner Slider */
+    .hero-slider {
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      min-height: 500px;
+      overflow: hidden;
+    }
+
+    .slides-wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 0.5 Opacity Black Layer Overlay */
+    .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content {
+      text-align: center;
+      color: var(--white);
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: var(--white);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: var(--white);
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .slider-arrow:hover {
+      background-color: var(--primary-color);
+      color: #000;
+    }
+
+    .slider-arrow.prev { left: 20px; }
+    .slider-arrow.next { right: 20px; }
+
+    /* Slider Dots (4 Dots) */
+    .slider-dots {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .dot.active {
+      background-color: var(--primary-color);
+      width: 28px;
+      border-radius: 10px;
+    }
+
+    /* 2nd Section: About Us (50/50 Layout) */
+    .about-section {
+      padding: 80px 0;
+      background-color: var(--white);
+    }
+
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .about-text h2::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: 0;
+    }
+
+    .about-text p {
+      color: var(--text-light);
+      margin-bottom: 15px;
+      font-size: 1.02rem;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-image img {
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    /* 3rd Section: Services (2 Rows of 3 Cards) */
+    .services-section {
+      padding: 80px 0;
+      background-color: var(--bg-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-img-container {
+      height: 220px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .service-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-img-container img {
+      transform: scale(1.05);
+    }
+
+    .service-content {
+      padding: 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-content h3 {
+      font-size: 1.25rem;
+      color: var(--secondary-color);
+      margin-bottom: 12px;
+    }
+
+    .service-content p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* 3rd Section of Body (Part 2): Customer Reviews */
+    .reviews-section {
+      padding: 80px 0;
+      background-color: var(--white);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .review-card {
+      background: var(--bg-light);
+      padding: 25px;
+      border-radius: 8px;
+      border-top: 4px solid var(--primary-color);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .review-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--secondary-color);
+      margin-bottom: 8px;
+    }
+
+    .review-text {
+      color: var(--text-dark);
+      font-style: italic;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .review-stars {
+      color: #ffc107;
+      font-size: 1.1rem;
+    }
+
+    /* 4th Section: FAQs (Accordion with Schema Markup) */
+    .faq-section {
+      padding: 80px 0;
+      background-color: var(--bg-light);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    details {
+      background: var(--white);
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+      border: 1px solid #e9ecef;
+    }
+
+    summary {
+      padding: 18px 25px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--secondary-color);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:hover {
+      background-color: rgba(212, 175, 55, 0.1);
+    }
+
+    summary .faq-icon {
+      color: var(--primary-color);
+      transition: transform 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    details[open] summary .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 25px 20px 25px;
+      color: var(--text-light);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    /* 5th Section: Contact Us (50/50 Layout) */
+    .contact-section {
+      padding: 80px 0;
+      background-color: var(--white);
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-info h3 {
+      font-size: 1.8rem;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      color: var(--text-light);
+      margin-bottom: 25px;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .info-item i {
+      width: 40px;
+      height: 40px;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--primary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .info-item-text span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .info-item-text strong {
+      color: var(--secondary-color);
+      font-size: 1rem;
+    }
+
+    .contact-map {
+      flex: 1;
+      min-width: 300px;
+      height: 450px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* STEP 3: FOOTER SECTION (33.33% / 3 Columns) */
+    footer {
+      background-color: var(--secondary-color);
+      color: var(--white);
+      padding-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-col-1 .footer-logo {
+      height: 60px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+
+    .footer-col-1 p {
+      color: #bbbbbb;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .footer-col-2 h4, .footer-col-3 h4 {
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .footer-col-2 h4::after, .footer-col-3 h4::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #bbbbbb;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary-color);
+      padding-left: 5px;
+    }
+
+    .footer-contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #bbbbbb;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    .footer-contact-list i {
+      color: var(--primary-color);
+      width: 20px;
+    }
+
+    .copyright {
+      padding: 20px 0;
+      text-align: center;
+      color: #888888;
+      font-size: 0.85rem;
+    }
+
+    /* WhatsApp Floating Button (Bottom Right) */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--accent-color);
+      color: #ffffff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 2000;
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+    }
+
+    /* RESPONSIVE DESIGN MEDIA QUERIES */
+    @media (max-width: 992px) {
+      .services-grid, .reviews-grid, .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        top: 79px;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        transition: var(--transition);
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+      }
+
+      .nav-menu.active {
+        left: 0;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .services-grid, .reviews-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid, .contact-grid {
+        flex-direction: column;
+      }
+
+      .contact-map {
+        height: 350px;
+      }
+    }
+  </style>
+
+  <!-- FAQ Accordion Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How often should I have my home or driveway pressure washed in Miami?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Due to Miami's humid climate and coastal conditions, we recommend pressure washing exterior surfaces at least once or twice a year to prevent mold, algae, and salt air buildup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between pressure washing and soft washing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pressure washing uses high-pressure water to deep clean hard surfaces like concrete. Soft washing uses low pressure combined with specialized safe cleaning solutions to gently clean roofs, stucco, and delicate sidings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will pressure washing damage my roof shingles or windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. For delicate surfaces like roofs and windows, we utilize specialized low-pressure soft washing techniques that clean effectively without causing damage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be home during the exterior cleaning service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You do not need to be home as long as exterior water spigots are accessible and windows/doors remain securely closed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your cleaning solutions safe for pets and surrounding landscape?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we use eco-friendly, biodegradable cleaning solutions and thoroughly pre-wet surrounding plants to ensure total safety."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- STEP 1: HEADER SECTION -->
+  <header>
+    <div class="container header-container">
+      <div class="logo-container">
+        <!-- Logo Image Provided -->
+        <img src="Center Group Professional Services.jpg" alt="Center Group Professional Services Logo">
+        <div class="logo-text">
+          Center Group
+          <span>PROFESSIONAL SERVICES</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- STEP 2: BODY SECTION -->
+
+  <!-- HERO BANNER SLIDER (1st Body Section) -->
+  <section class="hero-slider" id="home">
+    <div class="slides-wrapper" id="slidesWrapper">
+      
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1600&q=80" alt="Center Group Pressure Washing Banner 1">
+        <div class="slide-overlay">
+          <div class="hero-content">
+            <h1>Center Group Professional Services</h1>
+            <p>Reliable & High-Quality Pressure Washing Services in Miami, FL</p>
+            <a href="https://maps.app.goo.gl/622wQw7rL8rQJvKg8" class="btn">Get A Free Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80" alt="Center Group Pressure Washing Banner 2">
+        <div class="slide-overlay">
+          <div class="hero-content">
+            <h1>Commercial & Residential Cleaning</h1>
+            <p>Restore Your Property's Beauty with Our Advanced Washing Solutions</p>
+            <a href="tel:3053370993" class="btn">Call Today: (305) 337-0993</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1635424825057-7fb6dcd651ef?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Center Group Pressure Washing Banner 3">
+        <div class="slide-overlay">
+          <div class="hero-content">
+            <h1>Roof Cleaning</h1>
+            <p>Protecting Your Driveways, Roofs, and Decks 24/7</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1600&q=80" alt="Center Group Window Cleaning Banner 4">
+        <div class="slide-overlay">
+          <div class="hero-content">
+            <h1>Window & Exterior Washing</h1>
+            <p>Spotless, Crystal Clear Exterior Care for Homeowners & Businesses</p>
+            <a href="https://maps.app.goo.gl/622wQw7rL8rQJvKg8" class="btn">Contact Us Today</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrow Navigation Controls -->
+    <div class="slider-arrow prev" id="prevSlide"><i class="fas fa-chevron-left"></i></div>
+    <div class="slider-arrow next" id="nextSlide"><i class="fas fa-chevron-right"></i></div>
+
+    <!-- Bottom Slider Dots (4 Dots) -->
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION (2nd Body Section - 50% Text, 50% Image) -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>Welcome to Center Group Professional Services, providing reliable Pressure washing service in Miami, FL. We offer pressure washing, soft washing, painting, paver sealing, roof coatings, roof cleaning, window cleaning, gutter services, driveway cleaning, house washing, and pool patio deck cleaning. Call today for professional exterior cleaning and service!</p>
+          <p>Our dedicated team brings top-quality exterior washing equipment, eco-friendly cleaning formulas, and experienced specialists directly to your property. Operating around the clock, 24/7, we are committed to enhancing your property's curb appeal, eliminating harmful mold and grime, and safeguarding your real estate investment.</p>
+          <a href="https://maps.app.goo.gl/622wQw7rL8rQJvKg8" class="btn" style="margin-top: 15px;">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1718152423993-a29048dbc223?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Center Group Professional Services About Us">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION (3rd Body Section - 6 Services Grid: 2 Rows of 3) -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+      </div>
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://plus.unsplash.com/premium_photo-1661501072174-26da76dbaae3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pressure Washing Service">
+          </div>
+          <div class="service-content">
+            <h3>Pressure Washing Service</h3>
+            <p>Our high-pressure washing service removes years of stubborn dirt, grime, and mold from your property's tough exterior surfaces. Utilizing top-tier commercial equipment and eco-friendly cleaning agents, Center Group Professional Services restores your concrete driveways, sidewalks, and brick walls to pristine condition. Enhance your curb appeal instantly with our reliable and professional high-pressure cleaning solutions designed for long-lasting property protection.</p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1757967771758-d9b2ea992b3c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power Washing Service">
+          </div>
+          <div class="service-content">
+            <h3>Power Washing Service</h3>
+            <p>Center Group Professional Services provides heavy-duty power washing using heated water combined with high pressure to strip away oil, grease, paint residue, and heavy grime. Ideal for commercial walkways, parking lots, and tough residential surfaces, our specialized heated wash equipment ensures a deep, comprehensive clean. Trust our Miami specialists to deliver high-impact power washing results that refresh and rejuvenate your entire property exterior.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1721620958961-cccc239cbb49?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Window Pressure Washing">
+          </div>
+          <div class="service-content">
+            <h3>Window Pressure Washing</h3>
+            <p>Clear, spotless windows dramatically brighten your property's interior and exterior appearance. Our specialized window pressure washing and soft-rinse techniques safely eliminate water spots, pollen, dirt, and sea air residue without damaging glass, seals, or delicate window frames. Center Group Professional Services guarantees crystal-clear, streak-free window cleaning for homes and commercial buildings across Miami with safety and complete satisfaction.</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1746905205773-3ea50c8cd808?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Deck Pressure Washing">
+          </div>
+          <div class="service-content">
+            <h3>Deck Pressure Washing</h3>
+            <p>Protect and revitalize your wooden or composite pool deck and patio areas with our professional deck pressure washing services. Accumulated algae, mildew, and weather stains can create slippery hazards and accelerate wood decay. We utilize precise pressure settings and safe washing formulations to deep clean without splintering or eroding surfaces, restoring natural beauty and preparing decks for long-lasting sealants.</p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://plus.unsplash.com/premium_photo-1754251379601-95093e35fbfc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Roof Pressure Washing">
+          </div>
+          <div class="service-content">
+            <h3>Roof Pressure Washing</h3>
+            <p>Safely eliminate unsightly dark streak algae, moss, and debris from your roof with our customized low-pressure roof washing technique. Harsh high pressure can ruin shingles and roof tiles, which is why our gentler soft-wash method preserves structural integrity while eradicating organism growth at the root. Protect your investment, improve energy efficiency, and extend your roof's overall lifespan today.</p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1786295866836-2949bbd847cd?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House Pressure Washing">
+          </div>
+          <div class="service-content">
+            <h3>House Pressure Washing</h3>
+            <p>Give your house a complete exterior facelift with our professional house pressure washing and soft washing solutions. We safely clean stucco, siding, brick, and trim, removing dirt, cobwebs, airborne pollutants, and mildew. Center Group Professional Services uses safe pressure levels to preserve paint while making your home shine like new, boosting property value and creating a clean, healthy living environment.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS SECTION -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title">
+        <h2>Customer Reviews</h2>
+      </div>
+      <div class="reviews-grid">
+        
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-name">John Miller</div>
+          <div class="review-text">"Center Group did an amazing job cleaning my driveway perfectly."</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-name">Sarah Jenkins</div>
+          <div class="review-text">"Outstanding soft pressure washing service for our home in Miami!"</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-name">Robert Davis</div>
+          <div class="review-text">"Fast, reliable, and my roof looks brand new again."</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-name">Emily Wilson</div>
+          <div class="review-text">"Highly professional crew and excellent window pressure washing results."</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="review-name">Michael Taylor</div>
+          <div class="review-text">"Best exterior cleaning company with incredible 24/7 customer service!"</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="review-name">Jessica Anderson</div>
+          <div class="review-text">"They restored my patio deck quickly and very affordably."</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (4th Body Section) -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-container">
+        
+        <details>
+          <summary>
+            <span>How often should I have my home or driveway pressure washed in Miami?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-answer">
+            Due to Miami's humid climate and coastal conditions, we recommend pressure washing exterior surfaces at least once or twice a year to prevent mold, algae, and salt air buildup.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>What is the difference between pressure washing and soft washing?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-answer">
+            Pressure washing uses high-pressure water streams to deep clean hard surfaces like concrete driveways. Soft washing uses low pressure combined with specialized safe cleaning solutions to gently sanitize roofs, stucco, and delicate siding without damage.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>Will pressure washing damage my roof shingles or windows?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-answer">
+            No. For delicate surfaces like roof tiles and windows, we utilize specialized low-pressure soft washing techniques that eliminate dirt and stains while preserving all materials and seals.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>Do I need to be home during the exterior cleaning service?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-answer">
+            You do not need to be home during the service as long as exterior water spigots are accessible and all doors and windows remain securely closed.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>Are your cleaning solutions safe for pets and surrounding landscape?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-answer">
+            Yes, we use eco-friendly, biodegradable cleaning formulations. Our team also pre-wets surrounding plants and foliage before and after cleaning to ensure safe, complete protection.
+          </div>
+        </divfaq-answer>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION (5th Body Section - 50/50 Layout with Map) -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-grid">
+        
+        <!-- 50% Contact Info -->
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Reach out to Center Group Professional Services for top-rated exterior cleaning, pressure washing, and roof maintenance services in Miami, FL.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div class="info-item-text">
+                <span>Phone Number</span>
+                <strong><a href="tel:3053370993">(305) 337-0993</a></strong>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="info-item-text">
+                <span>Email Address</span>
+                <strong><a href="mailto:info@cgprofessionalservices.com">info@cgprofessionalservices.com</a></strong>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info-item-text">
+                <span>Address</span>
+                <strong>7105 SW 84th Ave, Miami, FL 33143</strong>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div class="info-item-text">
+                <span>Business Hours</span>
+                <strong>24/7 Service Available</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 50% Google Map -->
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183290.27641439927!2d-80.28322055!3d25.73992795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b79c6a3c9305%3A0x3c45d7ec17ced13b!2sCenter%20Group%20Professional%20Services!5e1!3m2!1sen!2sus!4v1789673235426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3: FOOTER SECTION (3 Columns - 33.33% each) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- 1st 33.33% Section: Logo + 100-word Description -->
+        <div class="footer-col-1">
+          <img src="Center Group Professional Services.jpg" alt="Center Group Professional Services Logo" class="footer-logo">
+          <p>Center Group Professional Services is Miami's premier exterior cleaning provider, dedicated to delivering top-tier pressure washing, soft washing, roof cleaning, paver sealing, and exterior maintenance solutions. Serving residential and commercial clients across Miami, FL, our skilled team utilizes cutting-edge pressure washing technology and safe, eco-friendly formulas to remove tough stains, grime, algae, and weather buildup. We take immense pride in enhancing property curb appeal, extending surface lifespans, and guaranteeing complete customer satisfaction 24 hours a day, 7 days a week. Contact our local exterior specialists today for prompt, dependable service.</p>
+        </div>
+
+        <!-- 2nd 33.33% Section: Navigation Menu -->
+        <div class="footer-col-2">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- 3rd 33.33% Section: Contact Info (Email, Phone, Address, Hours) -->
+        <div class="footer-col-3">
+          <h4>Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-envelope"></i> info@cgprofessionalservices.com</li>
+            <li><i class="fas fa-phone-alt"></i> (305) 337-0993</li>
+            <li><i class="fas fa-map-marker-alt"></i> 7105 SW 84th Ave, Miami, FL 33143</li>
+            <li><i class="fas fa-clock"></i> Business Hours: 24/7</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar at Bottom Center -->
+      <div class="copyright">
+        © 2026 All Rights Reserved By The Ranking Geeks
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Icon (Bottom Right Side) -->
+  <a href="https://wa.me/13053370993" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- JAVASCRIPT FOR SLIDER AND MOBILE MENU -->
+  <script>
+    // Navigation Menu Toggle for Mobile
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking nav link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Hero Image Slider Functionality
+    const slidesWrapper = document.getElementById('slidesWrapper');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+    
+    let currentSlide = 0;
+    const totalSlides = 4;
+
+    function goToSlide(index) {
+      if (index < 0) {
+        currentSlide = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        currentSlide = 0;
+      } else {
+        currentSlide = index;
+      }
+      
+      slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Update active dot
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[currentSlide].classList.add('active');
+    }
+
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+      });
+    });
+
+    // Auto slide every 5 seconds
+    setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+  </script>
+</body>
+</html>
