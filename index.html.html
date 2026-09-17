@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Runners Landscape LLC | Junk Removal & Hauling McDonough GA</title>
+    <meta name="description" content="Quick Runners Landscape LLC offers 24/7 top-rated junk removal, commercial hauling, residential cleanup, and construction debris hauling in McDonough, GA.">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup for FAQ Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of junk removal services do you offer in McDonough, GA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide residential junk removal, commercial junk removal, commercial hauling services, construction debris hauling, and full property cleanouts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your hauling and junk removal services available 24/7?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Quick Runners Landscape LLC operates 24 hours a day, 7 days a week to assist you with emergency and scheduled junk hauling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you schedule a junk pickup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We pride ourselves on speed and dependability! Same-day or next-day hauling services are frequently available across McDonough and surrounding areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer construction debris hauling for heavy materials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We safely collect, haul, and properly dispose of drywall, wood scrap, masonry, metal, and heavy renovation debris."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get an estimate for junk removal services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply call us at (470) 715-2381 or reach out via our website or WhatsApp for a fast, free, no-obligation estimate."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* --- Root & Reset Styling --- */
+        :root {
+            --primary-color: #2e7d32;
+            --primary-dark: #1b5e20;
+            --secondary-color: #81c784;
+            --accent-color: #fbc02d;
+            --dark-text: #222222;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --gray-border: #e0e0e0;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--dark-text);
+            background-color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- Header Section --- */
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            z-index: 1000;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-container span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            font-weight: 600;
+            color: #333;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-cta {
+            background: var(--primary-color);
+            color: var(--white) !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-dark);
+        }
+
+        /* --- Hero Banner Slider --- */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            min-height: 500px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* 0.5 Opacity Overlay */
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--white);
+            max-width: 850px;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: var(--transition);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        /* Slider Controls */
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.3);
+            color: var(--white);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 3;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-arrow:hover {
+            background: var(--primary-color);
+        }
+
+        .arrow-left { left: 20px; }
+        .arrow-right { right: 20px; }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 3;
+        }
+
+        .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        /* --- Global Section Style --- */
+        section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            display: block;
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- Body Section 2: About Us (50/50 Split) --- */
+        .about-section {
+            background-color: var(--light-bg);
+        }
+
+        .split-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .split-50 {
+            flex: 1 1 45%;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        /* --- Body Section 3: Services Section (2 Rows x 3 Columns) --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            border: 1px solid var(--gray-border);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .service-content p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* --- Body Section 4: Customer Reviews --- */
+        .reviews-section {
+            background-color: var(--light-bg);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .review-stars {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* --- Body Section 5: FAQ Accordion --- */
+        .faq-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        details.faq-item {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            transition: var(--transition);
+        }
+
+        details.faq-item[open] {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+        }
+
+        summary.faq-question {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary.faq-question::-webkit-details-marker {
+            display: none;
+        }
+
+        summary.faq-question .arrow-icon {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary .arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            margin-top: 12px;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 10px;
+        }
+
+        /* --- Body Section 6: Contact Us (50/50 Split) --- */
+        .contact-section {
+            background: #ffffff;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            border-radius: 12px;
+            border: 0;
+        }
+
+        .contact-details-box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1rem;
+        }
+
+        .contact-info-item i {
+            width: 45px;
+            height: 45px;
+            background: rgba(46, 125, 50, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        /* --- Step 3: Footer Section --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #dddddd;
+            padding-top: 60px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0 5% 50px 5%;
+        }
+
+        .footer-col {
+            flex: 1 1 30%;
+            min-width: 260px;
+        }
+
+        .footer-logo {
+            max-height: 70px;
+            margin-bottom: 15px;
+            background: #fff;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        .footer-col p {
+            font-size: 0.9rem;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            width: 35px;
+            height: 2px;
+            background: var(--primary-color);
+            display: block;
+            margin-top: 5px;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links li a {
+            color: #bbb;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links li a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #bbb;
+        }
+
+        .footer-contact-item i {
+            color: var(--secondary-color);
+            width: 20px;
+        }
+
+        .copyright-bar {
+            background: #111111;
+            text-align: center;
+            padding: 18px 20px;
+            font-size: 0.9rem;
+            color: #888888;
+            border-top: 1px solid #252525;
+        }
+
+        /* --- Floating WhatsApp Icon (Bottom Right) --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 10000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+
+        /* --- Responsive Styles --- */
+        @media (max-width: 992px) {
+            .services-grid, .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .split-container {
+                flex-direction: column;
+            }
+
+            .split-50 {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+
+            .services-grid, .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-col {
+                flex: 1 1 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STEP 1: HEADER SECTION -->
+    <header>
+        <div class="logo-container">
+            <img src="Quick Runners Landscape LLC.png" alt="Quick Runners Landscape LLC Logo" onerror="this.src='https://via.placeholder.com/180x60?text=Quick+Runners+LLC'">
+            <span>Quick Runners</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- STEP 2: BODY SECTION -->
+
+    <!-- 1st Section of Body: Hero Banner Slider -->
+    <section id="home" style="padding:0;">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1670175035057-eec020c03eb9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Fast & Dependable Junk Removal</h1>
+                    <p>Reclaim your space with McDonough's most trusted local junk hauling company.</p>
+                    <a href="#contact" class="btn-primary">Get A Free Quote</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1773852184074-e7ecb1dd3665?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Commercial & Residential Hauling</h1>
+                    <p>Professional debris clearance tailored for homes, job sites, and businesses.</p>
+                    <a href="#services" class="btn-primary">Our Services</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1635510952461-1fc1b7c96314?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>24/7 Local Cleanup Services</h1>
+                    <p>Hassle-free, eco-conscious property cleanup available anytime you need us.</p>
+                    <a href="tel:4707152381" class="btn-primary">Call (470) 715-2381</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1534097575056-ddba81f714c8?q=80&w=739&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Construction Debris Specialist</h1>
+                    <p>Heavy hauling and contractor waste cleanup handled smoothly and safely.</p>
+                    <a href="#contact" class="btn-primary">Contact Us Today</a>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <button class="slider-arrow arrow-left" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow arrow-right" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- 4 Dots -->
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2nd Section of Body: About Us (50% Text, 50% Image) -->
+    <section id="about" class="about-section">
+        <div class="split-container">
+            <div class="split-50 about-text">
+                <h2>About Us</h2>
+                <p>Welcome to <strong>Quick Runners Landscape LLC</strong>, your top-rated local choice for convenient junk removal and hauling services in McDonough, GA. We help clear unwanted items, clutter, and heavy debris from homes, commercial properties, and renovation sites with efficient service and a completely hassle-free approach.</p>
+                <p>Operating 24/7, our dedicated crew is committed to providing prompt, professional, and eco-friendly removal solutions tailored to your schedule. Need to reclaim your space? Contact us today for dependable junk removal and hauling in McDonough and surrounding communities!</p>
+            </div>
+            <div class="split-50 about-image">
+                <img src="https://plus.unsplash.com/premium_photo-1756454860409-2392c16d2f17?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quick Runners Team Hauling Junk">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3rd Section of Body: Services (6 Services, 2 Rows x 3 Cols) -->
+    <section id="services">
+        <div class="section-title">
+            <h2>Our Professional Services</h2>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1579015683905-d16bd6e45f5d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Junk Removal Service" class="service-img">
+                <div class="service-content">
+                    <h3>Junk Removal Service</h3>
+                    <p>Our comprehensive junk removal service is designed to clear out unwanted clutter quickly and effortlessly. Whether dealing with old furniture, discarded appliances, or general household debris, our energetic team manages all heavy lifting, sorting, loading, and responsible disposal, giving you back valuable room without any hassle or physical stress.</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1670108948068-ed86cc96393f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Residential Junk Removal" class="service-img">
+                <div class="service-content">
+                    <h3>Residential Junk Removal</h3>
+                    <p>Transform your living space with our tailored residential junk removal solutions. From garage cleanouts and attic decluttering to backyard waste disposal, we handle residential items with care and precision. We help homeowners, tenants, and realtors across McDonough restore clean, spacious environments efficiently, safely, and at budget-friendly rates.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1682627100541-2ab451e70601?q=80&w=836&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Commercial Junk Removal" class="service-img">
+                <div class="service-content">
+                    <h3>Commercial Junk Removal</h3>
+                    <p>Keep your commercial property professional and tidy with our efficient commercial junk removal services. We assist offices, retail spaces, warehouses, and property managers in disposing of old office equipment, bulk furniture, pallets, and packaging material quickly, ensuring minimal interruption to your everyday business operations.</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1601508831209-34d546c1a22d?q=80&w=415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Commercial Hauling Service" class="service-img">
+                <div class="service-content">
+                    <h3>Commercial Hauling Service</h3>
+                    <p>When heavy-duty transport and disposal are required, our commercial hauling service delivers reliable, large-scale capabilities. Equipped with sturdy vehicles and trained technicians, we haul bulky materials, machinery debris, and large commercial loads safely to designated recycling and waste facilities around Georgia.</p>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1592850940640-9408f5a016cb?q=80&w=421&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Local Junk Removal Company" class="service-img">
+                <div class="service-content">
+                    <h3>Local Junk Removal Company</h3>
+                    <p>As McDonough’s trusted local junk removal company, we take pride in serving our neighbors with honest communication, prompt response times, and dependable 24/7 availability. Being local allows us to reach your site fast, provide upfront pricing, and support eco-friendly community disposal standards.</p>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1603655534191-ea4d80072bf6?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="service-content">
+                    <h3>Construction Debris Hauling</h3>
+                    <p>Post-construction and remodeling cleanups are simple with our construction debris hauling service. We safely clear out lumber scraps, concrete, drywall, metal trimmings, and packaging from job sites, ensuring your construction project remains safe, compliant, organized, and ready for completion on schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4th Section of Body: Customer Reviews -->
+    <section id="reviews" class="reviews-section">
+        <div class="section-title">
+            <h2>Customer Reviews</h2>
+        </div>
+
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-name">Michael Miller</div>
+                <div class="review-text">Quick Runners provided exceptional junk removal service in McDonough!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-name">Sarah Jenkins</div>
+                <div class="review-text">Fast residential hauling team cleared my heavy garage clutter easily!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-name">David Wilson</div>
+                <div class="review-text">Top commercial junk removal service with professional and friendly workers!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-name">Emily Davis</div>
+                <div class="review-text">Prompt 24/7 service cleared our construction debris very safely!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="review-name">James Anderson</div>
+                <div class="review-text">Best local junk removal company with honest and fair pricing!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+                <div class="review-name">Jessica Taylor</div>
+                <div class="review-text">Super fast hauling service restored our home yard space immediately!</div>
+                <div class="review-stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5th Section of Body: 5 FAQs with Accordion (<details> & <summary>) -->
+    <section id="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+            <!-- FAQ 1 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>What type of junk removal services do you offer in McDonough, GA?</span>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    We offer a wide variety of hauling and cleanup solutions including residential junk removal, commercial junk removal, commercial hauling, local property cleanouts, and construction debris removal.
+                </div>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Are your hauling and junk removal services available 24/7?</span>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    Yes! Quick Runners Landscape LLC operates 24 hours a day, 7 days a week, making it easy to schedule emergency or regular junk hauling whenever it fits your timeline.
+                </div>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>How quickly can you schedule a junk pickup?</span>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    We pride ourselves on speedy service. Same-day and next-day pickup options are available throughout McDonough, GA and neighboring areas.
+                </div>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Do you offer construction debris hauling for heavy materials?</span>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    Yes, we are fully equipped to collect, haul, and safely dispose of construction waste including drywall, scrap wood, metal pieces, concrete bits, and remodeling debris.
+                </div>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>How do I get an estimate for junk removal services?</span>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    Getting an estimate is completely free and simple! Just call us directly at (470) 715-2381 or click our WhatsApp icon to send us details or photos of the items you need removed.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- 6th Section of Body: Contact Us (50/50 Split) -->
+    <section id="contact" class="contact-section">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="split-container">
+            <!-- 1st 50%: Contact Details -->
+            <div class="split-50 contact-details-box">
+                <h3 style="font-size: 1.5rem; color: var(--primary-dark);">Get In Touch</h3>
+                <p>Ready to clear out your unwanted junk? Contact Quick Runners Landscape LLC today for reliable, fast, and 24/7 hauling service in McDonough, GA!</p>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Phone Number:</strong><br>
+                        <a href="tel:4707152381" style="color: var(--primary-color); font-weight:600;">(470) 715-2381</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Address:</strong><br>
+                        McDonough, GA, 30253
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Business Hours:</strong><br>
+                        24/7 Always Open
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email Address:</strong><br>
+                        info@quickrunnerslandscape.com
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd 50%: Map iframe -->
+            <div class="split-50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42448.09927121386!2d-84.15153899999999!3d33.44246205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab4f681851e2f14b%3A0xa3c70a8a92ef8b3c!2sQuick%20Runners%20Landscape%20LLC!5e1!3m2!1sen!2sus!4v1789680032999!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 3: FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+            <!-- 1st 33.33%: Logo & 100-word Description -->
+            <div class="footer-col">
+                <img src="Quick Runners Landscape LLC.png" alt="Quick Runners Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/180x60?text=Quick+Runners+LLC'">
+                <p>Welcome to Quick Runners Landscape LLC, your premier local service for hassle-free junk removal and commercial hauling across McDonough, GA. We specialize in clearing residential clutter, job site debris, and commercial items with rapid, dependable 24/7 service. Our eco-conscious, customer-first approach guarantees smooth property cleanouts tailored to your schedule. Reclaim your home, business, or yard space today with our experienced hauling specialists!</p>
+            </div>
+
+            <!-- 2nd 33.33%: Navigation Menu / Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#reviews"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                    <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- 3rd 33.33%: Contact Info with Icons -->
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@quickrunnerslandscape.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(470) 715-2381</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>McDonough, GA, 30253</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Working Hours: 24/7</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="copyright-bar">
+            © 2026 All Rights Reserved By The Ranking Geeks
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Icon (Bottom Right) -->
+    <a href="https://wa.me/14707152381" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Slider & Interactive Features -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Banner Slider Logic
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prevSlide');
+        const nextBtn = document.getElementById('nextSlide');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+            
+            if (index >= slides.length) currentSlide = 0;
+            else if (index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Auto slide play
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetSliderTimer() {
+            clearInterval(slideInterval);
+            startSlider();
+        }
+
+        // Event listeners for arrows and dots
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetSliderTimer();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetSliderTimer();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                resetSliderTimer();
+            });
+        });
+
+        startSlider();
+    </script>
+</body>
+</html>
